@@ -35,6 +35,6 @@ data/fer2013/test/
 عبر الرابط:
 https://www.kaggle.com/datasets/msambare/fer2013
 
-ويمكنك توليد النموذج باستخدام الدفتر.
+ويمكنك توليد النموذج عبر تشغيل:
 
 Facial_Expression_Classifier.ipynb
