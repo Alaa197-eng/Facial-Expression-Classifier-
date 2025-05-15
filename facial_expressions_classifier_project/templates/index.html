@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <title>تصنيف الإيماءات</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>واجهة تصنيف الإيماءات</h1>
+        <form method="POST" enctype="multipart/form-data">
+            <input type="file" name="file" accept="image/*" required>
+            <button type="submit">تنبؤ</button>
+        </form>
+
+        {% if prediction %}
+            <div class="result">
+                <h2>التنبؤ: {{ prediction }}</h2>
+                <img src="{{ image_url }}" alt="الصورة المرفوعة" class="uploaded-img">
+            </div>
+        {% endif %}
+    </div>
+</body>
+</html>
